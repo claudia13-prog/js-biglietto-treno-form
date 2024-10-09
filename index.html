@@ -24,15 +24,20 @@
     <!--form -->
     <form>
         <div class="mb-3">
-          <label for="exampleInputEmail1" class="form-label">Email address</label>
-          <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+          <label for="user-km" class="form-label">Inserisci i km da percorrere</label>
+          <input type="number" class="form-control" id="user-km" >
         </div>
         <div class="mb-3">
-          <label for="exampleInputPassword1" class="form-label">Password</label>
-          <input type="password" class="form-control" id="exampleInputPassword1">
+          <label for="user-age" class="form-label">Inserisci l'età del passeggero</label>
+          <input type="number" class="form-control" id="user-age">
         </div>
         
-        <button type="submit" class="btn btn-primary">Submit</button>
+        <div class="mb-3">
+
+          <button class="btn btn-primary">Calcola il prezzo</button>
+          <button class="btn btn-primary" id="btn-reset">Reset</button>
+        </div>
+
       </form>
     <!--/form -->
 
