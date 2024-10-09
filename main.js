@@ -28,10 +28,15 @@ myForm.addEventListener('submit', function(event){
     console.log('prova invio form');
     console.log('Km: ', userKm.value);
     console.log('Age: ', userAge.value);
+   
+    
+    
+
 
     // in funzione dei dati calcolo il prezzo
 
-
+    let price = kmPrice * userKm;
+    console.log(price);
 
 
     // restituisco un output
@@ -39,7 +44,7 @@ myForm.addEventListener('submit', function(event){
     userKm.value = '';
     userAge.value = '';
 
-    resultText.innerHTML = 'Il calcolo del biglietto è completato';
+    resultText.innerHTML = 'Il prezzo del biglietto è di € ', price;
     resultContainer.classList.remove('d-none');
 })
 
